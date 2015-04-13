@@ -6,10 +6,7 @@ import com.jfinal.core.Controller;
 
 public class IndexController extends Controller {
 	public void index() {
-		setAttr("title", "uikoo9.com");
-		setAttr("devMode", true);
 		setAttr("base", getHttpPath(getRequest()));
-		
 		render("/WEB-INF/view/index.ftl");
 	}
 	
